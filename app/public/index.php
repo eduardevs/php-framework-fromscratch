@@ -3,7 +3,7 @@
 
 use EduarDev\Framework\Http\Kernel;
 use EduarDev\Framework\Http\Request;
-
+define('BASE_PATH', dirname(__DIR__));
 // $dispatcher = require_once dirname(__DIR__) . '/vendor/nikic/fast-route/src/Dispatcher.php';
 // dd($dispatcher);
 
