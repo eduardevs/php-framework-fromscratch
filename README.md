@@ -1,0 +1,1 @@
+This is a project to apply Front Controller design pattern, to manage Http request and responses with a Kernel class. This are the fundamentals and core concepts that are used in most of *PHP* frameworks
