@@ -29,7 +29,9 @@ class Kernel
 
         [$status, [$controller, $method], $vars] = $routeInfo;
 
-        $response = (new $controller())->$method($vars);
+        $response = call_user_func_array([new $controller, $method], $vars);
+        // call in order to create a response
+        // $response = (new $controller())->$method($vars);
         return $response;
     }
 }
