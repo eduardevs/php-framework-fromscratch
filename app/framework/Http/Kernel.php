@@ -39,15 +39,12 @@ class Kernel
         // dd($dispatcher);
         // Dispatch a URI, to obtain the route info
         $routeInfo = $dispatcher->dispatch(
-            $request->server['REQUEST_METHOD'],
-            $request->server['REQUEST_URI']
+            $request->getMethod(),
+            $request->getPathInfo(),
         );
-        // dd($routeInfo);
-        // Dispatcher::FOUND;
-        // handler methods passing in the 
+        dd($request->getPathInfo());
+ 
         [$status, $handler, $vars] = $routeInfo;
         return $handler($vars); 
     }
-    // call the handler, provided by the route info, in order to create a response.
-
 }
