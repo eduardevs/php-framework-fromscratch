@@ -1,8 +1,5 @@
 <?php
 
-
-
 return [
-
-    ['GET', '/',[HomeController::class, 'index'] ]
+    ['GET', '/',[\App\Controller\HomeController::class, 'index'] ]
 ];
