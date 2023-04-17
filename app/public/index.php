@@ -1,8 +1,11 @@
 <?php declare(strict_types=1);
 
+
 use EduarDev\Framework\Http\Kernel;
 use EduarDev\Framework\Http\Request;
-use EduarDev\Framework\Http\Response;
+
+// $dispatcher = require_once dirname(__DIR__) . '/vendor/nikic/fast-route/src/Dispatcher.php';
+// dd($dispatcher);
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 

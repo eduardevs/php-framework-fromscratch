@@ -26,5 +26,8 @@
     },
     "scripts": {
         "run-phpunit": "vendor/bin/phpunit"
+    },
+    "require": {
+        "nikic/fast-route": "2.0.x-dev"
     }
 }
